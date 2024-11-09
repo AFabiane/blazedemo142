@@ -21,7 +21,7 @@
             <version>5.11.1</version>
             <scope>test</scope>
         </dependency>
-
+     
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest</artifactId>
@@ -34,45 +34,32 @@
             <artifactId>selenium-java</artifactId>
             <version>4.25.0</version>
         </dependency>
-
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>7.20.1</version>
         </dependency>
-
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit-platform-engine</artifactId>
             <version>7.20.1</version>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
             <version>7.20.1</version>
             <scope>test</scope>
+        </dependency> 
+        
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.9.2</version>
         </dependency>
-
+    
+        
     </dependencies>
-    <build>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.0.0-M5</version> 
-            <configuration>
-                <includes>
-                    <include>**/*Test.java</include>
-                </includes>
-                <systemPropertyVariables>
-                    <cucumber.options>--plugin pretty --glue src/test/java --tags @smoke</cucumber.options>
-                </systemPropertyVariables>
-            </configuration>
-        </plugin>
-    </plugins>
-</build>
-
+    
 
 </project>
