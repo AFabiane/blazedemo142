@@ -3,14 +3,13 @@ Nós já aprendemos a usar Selenium em algumas abordagens:
 Adaptar a gravação com o Selenium WebDriver
 Criar nossos próprios scripts simples em programação
 
-Em um projeto simples cada teste é um arquivo
+Em um projeto simples, cada teste é um arquivo
 
 Agora vamos aprender abordagens úteis em projetos com vida útil maior:
 
 Projeto utilizando a abordagem BDD (Bahavior Driven Development)
 - Desenvolvimento Direcionado por Comportamento
 --> Foco do DBB é melhorar a comunição do time
-
 --> Usar um plugin / framework chamado Cucumber (kiocâmber) (Pepino)
 --> Seguir a sintaxe Gherkin (picles de pepino)
 
@@ -18,4 +17,17 @@ Um teste será composto por 2 arquivos
 - arquivo de negócio, escrito em Gherkin (.feature)
 - arquivo de automação, que faz referência ao .feature (.java)
 
+Projeto ttilizando a abordagem Page Objects / Page Factory
+- Pode usar ou não BDD
+--> Foco na manutenção e reaproveitamento de longo prazo
+--> Útil para projetos com Ciclo de Vida de Desenvolvimento de Software 
+    (CVDS/SDLC)
 
+    Um teste vão ser vários arquivos...
+    - um arquivo de mapeamento para cada página ou região da página (*Page.java)
+    - um arquivo de base para tudo que há em comum nos mapeamentos
+    - pode ter um arquivo de negócio, escrito em Gherkin (.feature)
+    - um arquivo de automação, que faz referência ao .feature (.java) e ao mapeamento
+    por projeto: 
+    - um arquivo de hooks (Before e After centralizados)
+    - um arquivo ruuner (executar o teste / maestro)
