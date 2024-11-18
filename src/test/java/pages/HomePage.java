@@ -28,4 +28,17 @@ public class HomePage extends CommonPage{
     WebElement btnFindFlights;
 
     // ações com os elementos mapeados
+    public void selecionarOrigemDestino(String byOrigem, String byDestino){
+        driver.findElement(byLocal(byOrigem)).click();
+        driver.findElement(byLocal(byDestino)).click();
+    }
+
+    public void clicarBotaoFindFlights(){
+        btnFindFlights.click();
+    }
+
+    public void acessarHomePage(String url){
+        driver.get(url);
+    }
+
 }

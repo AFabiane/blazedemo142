@@ -25,7 +25,9 @@ Projeto ttilizando a abordagem Page Objects / Page Factory
 
     Um teste vão ser vários arquivos...
     - um arquivo de mapeamento para cada página ou região da página (*Page.java)
-    - um arquivo de base para tudo que há em comum nos mapeamentos
+    - um arquivo de CommonPage para tudo que há em comum nos mapeamentos
+    - Um arquivo chamado base para definir o Selenium que vai ser compartilhado
+    (bola)
     - pode ter um arquivo de negócio, escrito em Gherkin (.feature)
     - um arquivo de automação, que faz referência ao .feature (.java) e ao mapeamento
     por projeto: 

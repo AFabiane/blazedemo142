@@ -11,6 +11,8 @@ public class CommonPage{
         this.driver = driver;
     }
 
-    // ToDo: Vamos colocar funções em comum nas páginas aqui
+    public String lerNomeDaGuia(){
+        return driver.getTitle(); // lê titulo da guia / página
+    }
     
 }
