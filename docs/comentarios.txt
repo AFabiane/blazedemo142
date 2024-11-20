@@ -33,3 +33,18 @@ Projeto ttilizando a abordagem Page Objects / Page Factory
     por projeto: 
     - um arquivo de hooks (Before e After centralizados)
     - um arquivo ruuner (executar o teste / maestro)
+
+
+
+    Sobre Driver de Navegador
+    - um driver é um controlador que fica entre o Selenium e o Browser
+    - Existem pleo menos 9 formas diferentes de organizar e configurar o Driver
+    As princiapis:
+    - Usar a biblioteca WebDriverManager (atualização automomática)
+    - Baixar o driver manualmente para dentro do projeto
+      - Fácil de levar para outro computador (levar para viagem)
+      - Ruim porque quando tem atualização precisa adicionar em todos os projetos
+    - Baixar o driver manualmente para uma pasta comum do computador
+      - Atualiza o driver em uma pasta, atualizou para todos os projetos
+      - Precisa ter uma pasta no computador e apontar nas variáveis de ambiente
+      (depende da configuração da máquina para executar)
