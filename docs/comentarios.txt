@@ -48,3 +48,11 @@ Projeto ttilizando a abordagem Page Objects / Page Factory
       - Atualiza o driver em uma pasta, atualizou para todos os projetos
       - Precisa ter uma pasta no computador e apontar nas variáveis de ambiente
       (depende da configuração da máquina para executar)
+
+
+      - Deixar mais lento para visualizar melhor (temporária)
+      --> Use o syncronized para realizar uma pausa
+      
+      - DDT via exemplos ou lendo um CSV
+      --> Melhor usar a tabela de Exemplos em Page Object e BDD
+      --> Ler CSV pode ser uma opção em scripts mais simples
